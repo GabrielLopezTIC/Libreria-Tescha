@@ -1,0 +1,279 @@
+<app-header></app-header>
+<app-slider></app-slider>
+<div id="mainBody">
+    <div class="container">
+        <div class="row">
+            <!-- Sidebar ================================================== -->
+            <div id="sidebar" class="span3">
+                <div class="well well-small"><a id="myCart" href="product_summary.html"><img
+                            src="assets/themes/images/ico-cart.png" alt="cart">3 Articulos en tu carrito <span
+                            class="badge badge-warning pull-right">$155.00</span></a></div>
+                <ul id="sideManu" class="nav nav-tabs nav-stacked">
+                    <li class="subMenu open"><a> Aventuras [30]</a>
+                        <ul>
+                            <li><a href="products.html"><i class="icon-chevron-right"></i>Veinte mil leguas de viaje submarino</a></li>
+                        </ul>
+                    </li>
+                    <li class="subMenu"><a> Ciencia Ficción [84] </a>
+                        <ul style="display:none">
+                            <li><a href="products.html"><i class="icon-chevron-right"></i>Los juegos del hambre</a></li>
+                        </ul>
+                    </li>
+                    <li class="subMenu"><a>Diccionarios [10]</a>
+                        <ul style="display:none">
+                            <li><a href="products.html"><i class="icon-chevron-right"></i>Español</a></li>
+                        </ul>
+                    </li>
+                    <li class="subMenu"><a>Terror [10]</a>
+                        <ul style="display:none">
+                            <li><a href="products.html"><i class="icon-chevron-right"></i>Frankenstein</a></li>
+                        </ul>
+                    </li>
+                    <li class="subMenu"><a>Romance [1]</a>
+                        <ul style="display:none">
+                            <li><a href="products.html"><i class="icon-chevron-right"></i>Cumbres borrascosas</a></li>
+                        </ul>
+                    </li>
+                    <li class="subMenu"><a>Zoologia [20]</a>
+                        <ul style="display:none">
+                            <li><a href="products.html"><i class="icon-chevron-right"></i>Vacio</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <br />
+                <div class="thumbnail">
+                    <img [src]="'assets/themes/images/products/'+ librosLateral[0].clave" alt="" />
+                    <div class="caption">
+                        <h5>{{librosLateral[0].texto}}</h5>
+                        <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i
+                                    class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar a <i
+                                    class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a>
+                        </h4>
+                    </div>
+                </div><br />
+                <div class="thumbnail">
+                    <img [src]="'assets/themes/images/products/'+ librosLateral[1].clave" alt="">
+                    <div class="caption">
+                        <h5>{{librosLateral[1].texto}}</h5>
+                        <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i
+                                    class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar a <i
+                                    class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a>
+                        </h4>
+                    </div>
+                </div><br/>
+            </div>
+
+
+            <!-- Sidebar end=============================================== -->
+            <div class="span9">
+                <div class="well well-small">
+                    <h4>Productos destacados <small class="pull-right">100 + Productos destacados</small></h4>
+                    <div class="row-fluid">
+                        <div id="featured" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <ul class="thumbnails">
+                                        <li class="span3">
+                                            <div class="thumbnail">
+                                                <i class="tag"></i>
+                                                <a href="product_details.html"><img class="img-fluid" [src]="'assets/themes/images/products/'+ librosDestacados[0].clave"
+                                                        alt=""></a>
+                                                <div class="caption">
+                                                    <h5>{{librosDestacados[0].texto}}</h5>
+                                                    <h4><a class="btn" href="product_details.html">VER</a> <span
+                                                            class="pull-right">$222.00</span></h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="span3">
+                                            <div class="thumbnail">
+                                                <i class="tag"></i>
+                                                <a href="product_details.html"><img class="img-fluid" [src]="'assets/themes/images/products/'+ librosDestacados[1].clave"
+                                                        alt=""></a>
+                                                <div class="caption">
+                                                    <h5>{{librosDestacados[1].texto}}</h5>
+                                                    <h4><a class="btn" href="product_details.html">VER</a> <span
+                                                            class="pull-right">$222.00</span></h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="span3">
+                                            <div class="thumbnail">
+                                                <i class="tag"></i>
+                                                <a href="product_details.html"><img class="img-fluid" [src]="'assets/themes/images/products/'+ librosDestacados[2].clave"
+                                                        alt=""></a>
+                                                <div class="caption">
+                                                    <h5>{{librosDestacados[2].texto}}</h5>
+                                                    <h4><a class="btn" href="product_details.html">VER</a> <span
+                                                            class="pull-right">$222.00</span></h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="span3">
+                                            <div class="thumbnail">
+                                                <i class="tag"></i>
+                                                <a href="product_details.html"><img class="img-fluid" [src]="'assets/themes/images/products/'+ librosDestacados[3].clave"
+                                                        alt=""></a>
+                                                <div class="caption">
+                                                    <h5>{{librosDestacados[3].texto}}</h5>
+                                                    <h4><a class="btn" href="product_details.html">VER</a> <span
+                                                            class="pull-right">$222.00</span></h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <ul class="thumbnails">
+                                        <li class="span3">
+                                            <div class="thumbnail">
+                                                <i class="tag"></i>
+                                                <a href="product_details.html"><img class="img-fluid" [src]="'assets/themes/images/products/'+ librosDestacados[4].clave"
+                                                        alt=""></a>
+                                                <div class="caption">
+                                                    <h5>{{librosDestacados[4].texto}}</h5>
+                                                    <h4><a class="btn" href="product_details.html">VER</a> <span
+                                                            class="pull-right">$222.00</span></h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="span3">
+                                            <div class="thumbnail">
+                                                <i class="tag"></i>
+                                                <a href="product_details.html"><img class="img-fluid" [src]="'assets/themes/images/products/'+ librosDestacados[5].clave"
+                                                        alt=""></a>
+                                                <div class="caption">
+                                                    <h5>{{librosDestacados[5].texto}}</h5>
+                                                    <h4><a class="btn" href="product_details.html">VER</a> <span
+                                                            class="pull-right">$222.00</span></h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="span3">
+                                            <div class="thumbnail">
+                                                <a href="product_details.html"><img class="img-fluid" [src]="'assets/themes/images/products/'+ librosDestacados[6].clave"
+                                                        alt=""></a>
+                                                <div class="caption">
+                                                    <h5>{{librosDestacados[6].texto}}</h5>
+                                                    <h4><a class="btn" href="product_details.html">VER</a> <span
+                                                            class="pull-right">$222.00</span></h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="span3">
+                                            <div class="thumbnail">
+                                                <a href="product_details.html"><img class="img-fluid" [src]="'assets/themes/images/products/'+ librosDestacados[7].clave"
+                                                        alt=""></a>
+                                                <div class="caption">
+                                                    <h5>{{librosDestacados[7].texto}}</h5>
+                                                    <h4><a class="btn" href="product_details.html">VER</a> <span
+                                                            class="pull-right">$222.00</span></h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            <a class="left carousel-control" href="#featured" data-slide="prev">‹</a>
+                            <a class="right carousel-control" href="#featured" data-slide="next">›</a>
+                        </div>
+                    </div>
+                </div>
+                <h4>Ultimos productos </h4>
+                <ul class="thumbnails">
+                    <li class="span3">
+                        <div class="thumbnail">
+                            <a href="product_details.html"><img [src]="'assets/themes/images/products/'+ librosUltimos[0].clave" alt="" /></a>
+                            <div class="caption">
+                                <h5>{{librosUltimos[0].texto}}</h5>
+                                <p>
+                                    {{librosUltimos[0].info}}
+                                </p>
+
+                                <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i
+                                            class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar a <i
+                                            class="icon-shopping-cart"></i></a> <a class="btn btn-primary"
+                                        href="#">$222.00</a></h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="span3">
+                        <div class="thumbnail">
+                            <a href="product_details.html"><img [src]="'assets/themes/images/products/'+ librosUltimos[1].clave" alt="" /></a>
+                            <div class="caption">
+                                <h5>{{librosUltimos[1].texto}}</h5>
+                                <p>
+                                    {{librosUltimos[1].info}}
+                                </p>
+                                <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i
+                                            class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar a <i
+                                            class="icon-shopping-cart"></i></a> <a class="btn btn-primary"
+                                        href="#">$222.00</a></h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="span3">
+                        <div class="thumbnail">
+                            <a href="product_details.html"><img [src]="'assets/themes/images/products/'+ librosUltimos[2].clave" alt="" /></a>
+                            <div class="caption">
+                                <h5>{{librosUltimos[2].texto}}</h5>
+                                <p>
+                                    {{librosUltimos[2].info}}
+                                </p>
+                                <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i
+                                            class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar a <i
+                                            class="icon-shopping-cart"></i></a> <a class="btn btn-primary"
+                                        href="#">$222.00</a></h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="span3">
+                        <div class="thumbnail">
+                            <a href="product_details.html"><img  [src]="'assets/themes/images/products/'+ librosUltimos[3].clave" alt="" /></a>
+                            <div class="caption">
+                                <h5>{{librosUltimos[3].texto}}</h5>
+                                <p>
+                                    {{librosUltimos[3].info}}
+                                </p>
+                                <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i
+                                            class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar a <i
+                                            class="icon-shopping-cart"></i></a> <a class="btn btn-primary"
+                                        href="#">$222.00</a></h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="span3">
+                        <div class="thumbnail">
+                            <a href="product_details.html"><img  [src]="'assets/themes/images/products/'+ librosUltimos[4].clave" alt="" /></a>
+                            <div class="caption">
+                                <h5>{{librosUltimos[4].texto}}</h5>
+                                <p>
+                                    {{librosUltimos[4].info}}
+                                </p>
+                                <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i
+                                            class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar a <i
+                                            class="icon-shopping-cart"></i></a> <a class="btn btn-primary"
+                                        href="#">$222.00</a></h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="span3">
+                        <div class="thumbnail">
+                            <a href="product_details.html"><img  [src]="'assets/themes/images/products/'+ librosUltimos[5].clave" alt="" /></a>
+                            <div class="caption">
+                                <h5>{{librosUltimos[5].texto}}</h5>
+                                <p>
+                                    {{librosUltimos[5].info}}
+                                </p>
+                                <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i
+                                            class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar a <i
+                                            class="icon-shopping-cart"></i></a> <a class="btn btn-primary"
+                                        href="#">$222.00</a></h4>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
